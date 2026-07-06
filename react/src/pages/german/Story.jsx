@@ -303,14 +303,14 @@ export default function StoryPage() {
 
       utterance.onboundary = (event) => {
         if (!event.name || event.name === "word") {
+          boundaryFired = true;
           const charIndex = event.charIndex;
           const activeIdx = segmentRanges.findIndex(
             (r) => charIndex >= r.start && charIndex <= r.end
           );
 
-          if (activeIdx !== -1 && activeIdx !== activeSegment) {
-            // Small delay compensation — tweak 80-150ms to taste
-            setTimeout(() => setActiveSegment(activeIdx), 0);
+          if (activeIdx !== -1) {
+            setActiveSegment(activeIdx);
           }
         }
       };
@@ -483,13 +483,6 @@ export default function StoryPage() {
   };
 
   return (
-
-
-    // This is the return() JSX for your story component — drop it in place of your
-    // current return, keeping all your existing state/handlers (story, viewMode,
-    // isSpeaking, isPaused, activeSegment, handlePlay, handlePause, handleResume,
-    // handleStop, renderTextWithTooltips, sortedVocabulary, quiz state, write state, etc.)
-
     <div className="min-h-screen bg-[#0a0f1a] text-slate-200 selection:bg-cyan-500/30 font-sans pb-40 relative overflow-hidden">
 
       {/* Ambient glow accents — same treatment as the rest of the site */}
@@ -521,7 +514,7 @@ export default function StoryPage() {
 
       <main className="relative mx-auto max-w-4xl">
 
-        {/* Sticky Control Bar — now a floating glass pill instead of a flat bar */}
+        {/* Sticky Control Bar — floating glass pill */}
         <div className="sticky top-4 z-40 mx-4 md:mx-8 mb-6">
           <div className="rounded-2xl border border-slate-800 bg-slate-900/70 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.4)] px-5 py-3 flex flex-wrap items-center justify-between gap-4">
             <div className="flex items-center gap-2">
@@ -585,7 +578,11 @@ export default function StoryPage() {
               return (
                 <div
                   key={i}
-                  className={`flex flex-col md:flex-row gap-4 p-5 rounded-2xl transition-all duration-300 border ${isReadingThis
+                  // FIX: only the transform (scale) transitions smoothly now.
+                  // Background, border-color, and box-shadow switch INSTANTLY
+                  // the moment activeSegment updates, so the highlight jumps
+                  // to the next line in sync with the voice instead of fading in late.
+                  className={`flex flex-col md:flex-row gap-4 p-5 rounded-2xl border transition-transform duration-150 ${isReadingThis
                       ? "bg-gradient-to-r from-cyan-500/10 to-emerald-500/5 border-cyan-500/30 shadow-[0_0_25px_rgba(34,211,238,0.12)] scale-[1.01] border-l-4 border-l-cyan-400"
                       : "bg-slate-900/30 border-slate-800/60 hover:bg-slate-900/50"
                     }`}
@@ -895,5 +892,4 @@ export default function StoryPage() {
       </main>
     </div>
   );
-
 }
