@@ -282,7 +282,7 @@ export default function StoryPage() {
     const utterance = utteranceRef.current;
 
     utterance.lang = 'de-DE';
-    utterance.rate = 0.80;
+    utterance.rate = 0.70;
     utterance.pitch = 1.0;
     utterance.volume = 1;
 
