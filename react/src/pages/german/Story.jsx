@@ -1,7 +1,7 @@
-import { useEffect, useRef, useState, useMemo } from "react";
+import React, { useState, useEffect, useRef, useMemo } from "react";
 import { useNavigate } from "react-router-dom";
 import storyone from "../../assets/storyone.png";
-import { Play, Pause, Square, RotateCcw, CheckCircle2, XCircle, Sparkles, AlertTriangle } from 'lucide-react';
+import { Play, Pause, Square, CheckCircle2, XCircle, Sparkles, RotateCcw, AlertTriangle } from "lucide-react";
 
 // --- 1. Story Data (A2 Level with Extensive Vocabulary & Quiz) ---
 const a2Story = {
@@ -189,6 +189,37 @@ const a2Story = {
 
 const sortedVocabulary = [...a2Story.vocabulary].sort((a, b) => b.wordDe.length - a.wordDe.length);
 
+// 1. New Helper Component: Manages its own click state
+const TooltipWord = ({ part, vocabItem }) => {
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleInteraction = (e) => {
+    e.stopPropagation(); // Prevents the click from triggering parent elements
+    setIsClicked(!isClicked);
+  };
+
+  return (
+    <span 
+      className="group relative inline-block cursor-pointer px-0.5"
+      onClick={handleInteraction}
+      onMouseLeave={() => setIsClicked(false)} // Auto-close if the mouse moves away
+    >
+      <span className="border-b-[1.5px] border-dashed border-blue-400 text-blue-300 transition-colors group-hover:text-cyan-300">
+        {part}
+      </span>
+      
+      {/* 2. Logic Update: Show on group-hover OR if isClicked is true */}
+      <span className={`absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-max max-w-50 flex-col items-center z-50 pointer-events-none ${isClicked ? 'flex' : 'hidden group-hover:flex'}`}>
+        <span className="bg-slate-800 border border-slate-600 text-white text-sm rounded-xl py-2 px-3 shadow-2xl flex flex-col items-center">
+          <span className="text-emerald-400 font-bold text-base" dir="rtl">{vocabItem.wordKu}</span>
+          <span className="text-slate-300 text-[11px] text-center mt-1">{vocabItem.sentenceKu}</span>
+        </span>
+        <span className="w-2.5 h-2.5 bg-slate-800 border-b border-r border-slate-600 transform rotate-45 -mt-1.5"></span>
+      </span>
+    </span>
+  );
+};
+
 const renderTextWithTooltips = (text) => {
   const pattern = new RegExp(`\\b(${sortedVocabulary.map(v => v.wordDe).join('|')})\\b`, 'gi');
   const parts = text.split(pattern);
@@ -197,20 +228,8 @@ const renderTextWithTooltips = (text) => {
     const vocabItem = a2Story.vocabulary.find(v => v.wordDe.toLowerCase() === part.toLowerCase());
 
     if (vocabItem) {
-      return (
-        <span key={index} className="group relative inline-block cursor-pointer px-0.5">
-          <span className="border-b-[1.5px] border-dashed border-blue-400 text-blue-300 transition-colors group-hover:text-cyan-300">
-            {part}
-          </span>
-          <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden w-max max-w-50 flex-col items-center group-hover:flex z-50 pointer-events-none">
-            <span className="bg-slate-800 border border-slate-600 text-white text-sm rounded-xl py-2 px-3 shadow-2xl flex flex-col items-center">
-              <span className="text-emerald-400 font-bold text-base" dir="rtl">{vocabItem.wordKu}</span>
-              <span className="text-slate-300 text-[11px] text-center mt-1">{vocabItem.sentenceKu}</span>
-            </span>
-            <span className="w-2.5 h-2.5 bg-slate-800 border-b border-r border-slate-600 transform rotate-45 -mt-1.5"></span>
-          </span>
-        </span>
-      );
+      // 3. Render the new interactive component
+      return <TooltipWord key={index} part={part} vocabItem={vocabItem} />;
     }
     return <span key={index}>{part}</span>;
   });
@@ -344,8 +363,7 @@ export default function StoryPage() {
     }
   };
 
-  // Fallback: estimate segment timing by word count, since some browsers
-  // (Safari, Firefox) don't reliably fire onboundary at all.
+  // Fallback: estimate segment timing by word count
   const startFallbackTimer = () => {
     const wordsPerMinute = 140 * 0.80; // matches utterance.rate roughly
     const msPerWord = 60000 / wordsPerMinute;
@@ -390,12 +408,9 @@ export default function StoryPage() {
 
   // --- Quiz Handlers (Step-by-Step Logic) ---
   const handleOptionSelect = (optionIndex) => {
-    // Guard: block clicks once results are shown, or while a click is already
-    // being processed (this is what was causing the crash on the last question —
-    // double clicks pushed currentQuestionIndex past the end of the quiz array).
     if (showQuizResults || selectedJustNow !== null) return;
 
-    setSelectedJustNow(optionIndex); // Used to show yellow/red feedback styling
+    setSelectedJustNow(optionIndex); 
 
     // Save the answer
     const updatedAnswers = { ...quizAnswers, [currentQuestionIndex]: optionIndex };
@@ -414,9 +429,9 @@ export default function StoryPage() {
         });
         setQuizScore(score);
         setShowQuizResults(true);
-        setSelectedJustNow(null); // reset so state stays clean if quiz is retaken
+        setSelectedJustNow(null); 
       }
-    }, 700); // slightly longer so the color feedback is clearly visible
+    }, 700); 
   };
 
   const resetQuiz = () => {
@@ -485,7 +500,7 @@ export default function StoryPage() {
   return (
     <div className="min-h-screen bg-[#0a0f1a] text-slate-200 selection:bg-cyan-500/30 font-sans pb-40 relative overflow-hidden">
 
-      {/* Ambient glow accents — same treatment as the rest of the site */}
+      {/* Ambient glow accents */}
       <div className="absolute top-0 -left-24 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute top-96 -right-24 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
 
@@ -514,7 +529,7 @@ export default function StoryPage() {
 
       <main className="relative mx-auto max-w-4xl">
 
-        {/* Sticky Control Bar — floating glass pill */}
+        {/* Sticky Control Bar */}
         <div className="sticky top-4 z-40 mx-4 md:mx-8 mb-6">
           <div className="rounded-2xl border border-slate-800 bg-slate-900/70 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.4)] px-5 py-3 flex flex-wrap items-center justify-between gap-4">
             <div className="flex items-center gap-2">
@@ -578,10 +593,6 @@ export default function StoryPage() {
               return (
                 <div
                   key={i}
-                  // FIX: only the transform (scale) transitions smoothly now.
-                  // Background, border-color, and box-shadow switch INSTANTLY
-                  // the moment activeSegment updates, so the highlight jumps
-                  // to the next line in sync with the voice instead of fading in late.
                   className={`flex flex-col md:flex-row gap-4 p-5 rounded-2xl border transition-transform duration-150 ${isReadingThis
                       ? "bg-gradient-to-r from-cyan-500/10 to-emerald-500/5 border-cyan-500/30 shadow-[0_0_25px_rgba(34,211,238,0.12)] scale-[1.01] border-l-4 border-l-cyan-400"
                       : "bg-slate-900/30 border-slate-800/60 hover:bg-slate-900/50"
@@ -607,6 +618,8 @@ export default function StoryPage() {
             })}
           </div>
         </section>
+  
+   
 
         {/* Massive Vocabulary Table */}
         <section className="px-6 md:px-12">
