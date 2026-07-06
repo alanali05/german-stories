@@ -59,132 +59,132 @@ const a2Story = {
     { wordDe: "Tag", sentenceDe: "Heute ist ein schöner Tag.", wordKu: "رۆژ", sentenceKu: "ئەڤرۆ رۆژەکا خۆشە." }
   ],
   quiz: [
-  {
-    questionDe: "Was bedeutet das Wort 'schön' auf Kurdisch?",
-    questionKu: "رامانا پەیڤا 'schön' ب کوردی چییە؟",
-    options: ["سار", "گەرم", "جوان", "شیرین"],
-    correctAnswer: 2
-  },
-  {
-    questionDe: "Wie sagt man 'Ein einfacher Morgen' auf Kurdisch?",
-    questionKu: "تۆ چەوا دبێژی 'Ein einfacher Morgen' ب کوردی؟",
-    options: ["رۆژەکا سادە", "سپێدەیەکا سادە", "سپێدەیەکا سار", "نانێ تازە"],
-    correctAnswer: 1
-  },
-  {
-    questionDe: "Wähle das richtige deutsche Wort für 'ئاڤ':",
-    questionKu: "پەیڤا ئەلمانی یا دروست بۆ 'ئاڤ' هەلبژێرە:",
-    options: ["das Brot", "der Tee", "das Wasser", "die Jacke"],
-    correctAnswer: 2
-  },
-  {
-    questionDe: "Was bedeutet 'wacht auf' auf Kurdisch?",
-    questionKu: "رامانا پەیڤا 'wacht auf' ب کوردی چییە؟",
-    options: ["دزڤڕیت", "ژ خەو رادبیت", "دبینیت", "ل بەر خۆ دکەت"],
-    correctAnswer: 1
-  },
-  {
-    questionDe: "Wähle die richtige deutsche Übersetzung für 'زوو':",
-    questionKu: "وەرگێڕانا ئەلمانی یا دروست بۆ 'زوو' هەلبژێرە:",
-    options: ["Spät", "Früh", "Kalt", "Frisch"],
-    correctAnswer: 1
-  },
-  {
-    questionDe: "Wie sagt man 'Er trinkt kaltes Wasser' auf Kurdisch?",
-    questionKu: "تۆ چەوا دبێژی 'Er trinkt kaltes Wasser' ب کوردی؟",
-    options: [
-      "ئەو پەرداخەکا ئاڤێ ڤەدخۆت",
-      "ئەو چایا گەرم ڤەدخۆت",
-      "ئەو ئاڤا سار ڤەدخۆت",
-      "ئەو نانێ تازە دکڕیت"
-    ],
-    correctAnswer: 2
-  },
-  {
-    questionDe: "Wie lautet das kurdische Wort für 'die Jacke'?",
-    questionKu: "پەیڤا کوردی بۆ 'die Jacke' چییە؟",
-    options: ["نان", "سێڤ", "پەرداخ", "چاکێت"],
-    correctAnswer: 3
-  },
-  {
-    questionDe: "Wähle das richtige deutsche Wort für 'شین':",
-    questionKu: "پەیڤا ئەلمانی یا دروست بۆ 'شین' هەلبژێرە:",
-    options: ["Rot", "Grün", "Blau", "Gelb"],
-    correctAnswer: 2
-  },
-  {
-    questionDe: "Was bedeutet 'geht zu Fuß' auf Kurdisch?",
-    questionKu: "رامانا پەیڤا 'geht zu Fuß' ب کوردی چییە؟",
-    options: ["دزڤڕیت", "ب پیادە دچیت", "ڤەدخۆت", "دکڕیت"],
-    correctAnswer: 1
-  },
-  {
-    questionDe: "Wie sagt man 'lokaler Markt' auf Kurdisch?",
-    questionKu: "تۆ چەوا دبێژی 'lokaler Markt' ب کوردی؟",
-    options: ["بازاڕێ مەزن", "بازاڕێ ناوچەیێ", "مالا جوان", "سەقایێ گەرم"],
-    correctAnswer: 1
-  },
-  {
-    questionDe: "Wähle das richtige deutsche Wort für 'تازە':",
-    questionKu: "پەیڤا ئەلمانی یا دروست بۆ 'تازە' هەلبژێرە:",
-    options: ["Süß", "Kalt", "Heiß", "Frisch"],
-    correctAnswer: 3
-  },
-  {
-    questionDe: "Was bedeutet 'das Brot' auf Kurdisch?",
-    questionKu: "رامانا پەیڤا 'das Brot' ب کوردی چییە؟",
-    options: ["چای", "سێڤ", "نان", "ئاڤ"],
-    correctAnswer: 2
-  },
-  {
-    questionDe: "Wähle das richtige deutsche Wort für 'شیرین':",
-    questionKu: "پەیڤا ئەلمانی یا دروست بۆ 'شیرین' هەلبژێرە:",
-    options: ["Bitter", "Einfach", "Süß", "Gut"],
-    correctAnswer: 2
-  },
-  {
-    questionDe: "Was bedeutet 'das Wetter' auf Kurdisch?",
-    questionKu: "رامانا پەیڤا 'das Wetter' ب کوردی چییە؟",
-    options: ["سەقا", "رۆژ", "مال", "بازاڕ"],
-    correctAnswer: 0
-  },
-  {
-    questionDe: "Wie sagt man 'sonnig und warm' auf Kurdisch?",
-    questionKu: "تۆ چەوا دبێژی 'sonnig und warm' ب کوردی؟",
-    options: ["سار و باران", "ساوی و گەرم", "تار و سار", "جوان و سادە"],
-    correctAnswer: 1
-  },
-  {
-    questionDe: "Wähle die richtige deutsche Übersetzung für 'هەڤال':",
-    questionKu: "وەرگێڕانا ئەلمانی یا دروست بۆ 'هەڤال' هەلبژێرە:",
-    options: ["der Junge", "der Freund", "der Bruder", "der Mann"],
-    correctAnswer: 1
-  },
-  {
-    questionDe: "Was bedeutet 'trifft' auf Kurdisch?",
-    questionKu: "رامانا پەیڤا 'trifft' ب کوردی چییە؟",
-    options: ["دکڕیت", "دبینیت", "ڤەدخۆت", "دزڤڕیت"],
-    correctAnswer: 1
-  },
-  {
-    questionDe: "Wie sagt man 'heißer Tee' auf Kurdisch?",
-    questionKu: "تۆ چەوا دبێژی 'heißer Tee' ب کوردی؟",
-    options: ["ئاڤا سار", "چایا سار", "چایا گەرم", "نانێ گەرم"],
-    correctAnswer: 2
-  },
-  {
-    questionDe: "Was bedeutet 'zusammen' auf Kurdisch?",
-    questionKu: "رامانا پەیڤا 'zusammen' ب کوردی چییە؟",
-    options: ["ب تنێ", "زوو", "پێکڤە", "باش"],
-    correctAnswer: 2
-  },
-  {
-    questionDe: "Wähle das richtige deutsche Wort für 'خەندە':",
-    questionKu: "پەیڤا ئەلمانی یا دروست بۆ 'خەندە' هەلبژێرە:",
-    options: ["Weinen", "Lachen", "Lächeln", "Schauen"],
-    correctAnswer: 2
-  }
-]
+    {
+      questionDe: "Was bedeutet das Wort 'schön' auf Kurdisch?",
+      questionKu: "رامانا پەیڤا 'schön' ب کوردی چییە؟",
+      options: ["سار", "گەرم", "جوان", "شیرین"],
+      correctAnswer: 2
+    },
+    {
+      questionDe: "Wie sagt man 'Ein einfacher Morgen' auf Kurdisch?",
+      questionKu: "تۆ چەوا دبێژی 'Ein einfacher Morgen' ب کوردی؟",
+      options: ["رۆژەکا سادە", "سپێدەیەکا سادە", "سپێدەیەکا سار", "نانێ تازە"],
+      correctAnswer: 1
+    },
+    {
+      questionDe: "Wähle das richtige deutsche Wort für 'ئاڤ':",
+      questionKu: "پەیڤا ئەلمانی یا دروست بۆ 'ئاڤ' هەلبژێرە:",
+      options: ["das Brot", "der Tee", "das Wasser", "die Jacke"],
+      correctAnswer: 2
+    },
+    {
+      questionDe: "Was bedeutet 'wacht auf' auf Kurdisch?",
+      questionKu: "رامانا پەیڤا 'wacht auf' ب کوردی چییە؟",
+      options: ["دزڤڕیت", "ژ خەو رادبیت", "دبینیت", "ل بەر خۆ دکەت"],
+      correctAnswer: 1
+    },
+    {
+      questionDe: "Wähle die richtige deutsche Übersetzung für 'زوو':",
+      questionKu: "وەرگێڕانا ئەلمانی یا دروست بۆ 'زوو' هەلبژێرە:",
+      options: ["Spät", "Früh", "Kalt", "Frisch"],
+      correctAnswer: 1
+    },
+    {
+      questionDe: "Wie sagt man 'Er trinkt kaltes Wasser' auf Kurdisch?",
+      questionKu: "تۆ چەوا دبێژی 'Er trinkt kaltes Wasser' ب کوردی؟",
+      options: [
+        "ئەو پەرداخەکا ئاڤێ ڤەدخۆت",
+        "ئەو چایا گەرم ڤەدخۆت",
+        "ئەو ئاڤا سار ڤەدخۆت",
+        "ئەو نانێ تازە دکڕیت"
+      ],
+      correctAnswer: 2
+    },
+    {
+      questionDe: "Wie lautet das kurdische Wort für 'die Jacke'?",
+      questionKu: "پەیڤا کوردی بۆ 'die Jacke' چییە؟",
+      options: ["نان", "سێڤ", "پەرداخ", "چاکێت"],
+      correctAnswer: 3
+    },
+    {
+      questionDe: "Wähle das richtige deutsche Wort für 'شین':",
+      questionKu: "پەیڤا ئەلمانی یا دروست بۆ 'شین' هەلبژێرە:",
+      options: ["Rot", "Grün", "Blau", "Gelb"],
+      correctAnswer: 2
+    },
+    {
+      questionDe: "Was bedeutet 'geht zu Fuß' auf Kurdisch?",
+      questionKu: "رامانا پەیڤا 'geht zu Fuß' ب کوردی چییە؟",
+      options: ["دزڤڕیت", "ب پیادە دچیت", "ڤەدخۆت", "دکڕیت"],
+      correctAnswer: 1
+    },
+    {
+      questionDe: "Wie sagt man 'lokaler Markt' auf Kurdisch?",
+      questionKu: "تۆ چەوا دبێژی 'lokaler Markt' ب کوردی؟",
+      options: ["بازاڕێ مەزن", "بازاڕێ ناوچەیێ", "مالا جوان", "سەقایێ گەرم"],
+      correctAnswer: 1
+    },
+    {
+      questionDe: "Wähle das richtige deutsche Wort für 'تازە':",
+      questionKu: "پەیڤا ئەلمانی یا دروست بۆ 'تازە' هەلبژێرە:",
+      options: ["Süß", "Kalt", "Heiß", "Frisch"],
+      correctAnswer: 3
+    },
+    {
+      questionDe: "Was bedeutet 'das Brot' auf Kurdisch?",
+      questionKu: "رامانا پەیڤا 'das Brot' ب کوردی چییە؟",
+      options: ["چای", "سێڤ", "نان", "ئاڤ"],
+      correctAnswer: 2
+    },
+    {
+      questionDe: "Wähle das richtige deutsche Wort für 'شیرین':",
+      questionKu: "پەیڤا ئەلمانی یا دروست بۆ 'شیرین' هەلبژێرە:",
+      options: ["Bitter", "Einfach", "Süß", "Gut"],
+      correctAnswer: 2
+    },
+    {
+      questionDe: "Was bedeutet 'das Wetter' auf Kurdisch?",
+      questionKu: "رامانا پەیڤا 'das Wetter' ب کوردی چییە؟",
+      options: ["سەقا", "رۆژ", "مال", "بازاڕ"],
+      correctAnswer: 0
+    },
+    {
+      questionDe: "Wie sagt man 'sonnig und warm' auf Kurdisch?",
+      questionKu: "تۆ چەوا دبێژی 'sonnig und warm' ب کوردی؟",
+      options: ["سار و باران", "ساوی و گەرم", "تار و سار", "جوان و سادە"],
+      correctAnswer: 1
+    },
+    {
+      questionDe: "Wähle die richtige deutsche Übersetzung für 'هەڤال':",
+      questionKu: "وەرگێڕانا ئەلمانی یا دروست بۆ 'هەڤال' هەلبژێرە:",
+      options: ["der Junge", "der Freund", "der Bruder", "der Mann"],
+      correctAnswer: 1
+    },
+    {
+      questionDe: "Was bedeutet 'trifft' auf Kurdisch?",
+      questionKu: "رامانا پەیڤا 'trifft' ب کوردی چییە؟",
+      options: ["دکڕیت", "دبینیت", "ڤەدخۆت", "دزڤڕیت"],
+      correctAnswer: 1
+    },
+    {
+      questionDe: "Wie sagt man 'heißer Tee' auf Kurdisch?",
+      questionKu: "تۆ چەوا دبێژی 'heißer Tee' ب کوردی؟",
+      options: ["ئاڤا سار", "چایا سار", "چایا گەرم", "نانێ گەرم"],
+      correctAnswer: 2
+    },
+    {
+      questionDe: "Was bedeutet 'zusammen' auf Kurdisch?",
+      questionKu: "رامانا پەیڤا 'zusammen' ب کوردی چییە؟",
+      options: ["ب تنێ", "زوو", "پێکڤە", "باش"],
+      correctAnswer: 2
+    },
+    {
+      questionDe: "Wähle das richtige deutsche Wort für 'خەندە':",
+      questionKu: "پەیڤا ئەلمانی یا دروست بۆ 'خەندە' هەلبژێرە:",
+      options: ["Weinen", "Lachen", "Lächeln", "Schauen"],
+      correctAnswer: 2
+    }
+  ]
 };
 
 const sortedVocabulary = [...a2Story.vocabulary].sort((a, b) => b.wordDe.length - a.wordDe.length);
@@ -276,93 +276,96 @@ export default function StoryPage() {
   }, []);
 
   const handlePlay = () => {
-  window.speechSynthesis.cancel();
-  
-  utteranceRef.current = new SpeechSynthesisUtterance(fullTextDe);
-  const utterance = utteranceRef.current;
+    window.speechSynthesis.cancel();
 
-  utterance.lang = 'de-DE';
-  utterance.rate = 0.80;
-  utterance.pitch = 1.0;
-  utterance.volume = 1;
+    utteranceRef.current = new SpeechSynthesisUtterance(fullTextDe);
+    const utterance = utteranceRef.current;
 
-  const pickVoice = () => {
-    const voices = window.speechSynthesis.getVoices();
-    let v = voices.find(v => v.lang.startsWith("de") &&
-      (v.name.toLowerCase().includes("male") || v.name.includes("Hans") || v.name.includes("Conrad")));
-    if (!v) v = voices.find(v => v.lang.startsWith("de") && v.name.includes("Google"));
-    if (!v) v = voices.find(v => v.lang.startsWith("de"));
-    return v;
-  };
+    utterance.lang = 'de-DE';
+    utterance.rate = 0.80;
+    utterance.pitch = 1.0;
+    utterance.volume = 1;
 
-  const startUtterance = () => {
-    const bestVoice = pickVoice();
-    if (bestVoice) utterance.voice = bestVoice;
-
-    let boundaryFired = false;
-
-    utterance.onboundary = (event) => {
-      if (!event.name || event.name === "word") {
-        boundaryFired = true;
-        const charIndex = event.charIndex;
-        const activeIdx = segmentRanges.findIndex(
-          (r) => charIndex >= r.start && charIndex <= r.end
-        );
-        if (activeIdx !== -1) setActiveSegment(activeIdx);
-      }
+    const pickVoice = () => {
+      const voices = window.speechSynthesis.getVoices();
+      let v = voices.find(v => v.lang.startsWith("de") &&
+        (v.name.toLowerCase().includes("male") || v.name.includes("Hans") || v.name.includes("Conrad")));
+      if (!v) v = voices.find(v => v.lang.startsWith("de") && v.name.includes("Google"));
+      if (!v) v = voices.find(v => v.lang.startsWith("de"));
+      return v;
     };
 
-    utterance.onstart = () => {
-      // Fallback: if onboundary hasn't fired within 400ms of speech starting,
-      // assume this browser doesn't support it, and drive highlighting off a timer instead.
-      setTimeout(() => {
-        if (!boundaryFired) {
-          startFallbackTimer();
+    const startUtterance = () => {
+      const bestVoice = pickVoice();
+      if (bestVoice) utterance.voice = bestVoice;
+
+      let boundaryFired = false;
+
+      utterance.onboundary = (event) => {
+        if (!event.name || event.name === "word") {
+          const charIndex = event.charIndex;
+          const activeIdx = segmentRanges.findIndex(
+            (r) => charIndex >= r.start && charIndex <= r.end
+          );
+
+          if (activeIdx !== -1 && activeIdx !== activeSegment) {
+            // Small delay compensation — tweak 80-150ms to taste
+            setTimeout(() => setActiveSegment(activeIdx), 0);
+          }
         }
-      }, 400);
+      };
+
+      utterance.onstart = () => {
+        // Fallback: if onboundary hasn't fired within 400ms of speech starting,
+        // assume this browser doesn't support it, and drive highlighting off a timer instead.
+        setTimeout(() => {
+          if (!boundaryFired) {
+            startFallbackTimer();
+          }
+        }, 400);
+      };
+
+      utterance.onend = () => resetSpeechState();
+      utterance.onerror = (err) => {
+        console.error("SpeechSynthesis Error:", err);
+        resetSpeechState();
+      };
+
+      window.speechSynthesis.speak(utterance);
+      setIsSpeaking(true);
+      setIsPaused(false);
     };
 
-    utterance.onend = () => resetSpeechState();
-    utterance.onerror = (err) => {
-      console.error("SpeechSynthesis Error:", err);
-      resetSpeechState();
-    };
-
-    window.speechSynthesis.speak(utterance);
-    setIsSpeaking(true);
-    setIsPaused(false);
+    // Voices sometimes aren't loaded yet on first call in Chrome
+    if (window.speechSynthesis.getVoices().length === 0) {
+      window.speechSynthesis.onvoiceschanged = () => startUtterance();
+    } else {
+      startUtterance();
+    }
   };
 
-  // Voices sometimes aren't loaded yet on first call in Chrome
-  if (window.speechSynthesis.getVoices().length === 0) {
-    window.speechSynthesis.onvoiceschanged = () => startUtterance();
-  } else {
-    startUtterance();
-  }
-};
+  // Fallback: estimate segment timing by word count, since some browsers
+  // (Safari, Firefox) don't reliably fire onboundary at all.
+  const startFallbackTimer = () => {
+    const wordsPerMinute = 140 * 0.80; // matches utterance.rate roughly
+    const msPerWord = 60000 / wordsPerMinute;
 
-// Fallback: estimate segment timing by word count, since some browsers
-// (Safari, Firefox) don't reliably fire onboundary at all.
-const startFallbackTimer = () => {
-  const wordsPerMinute = 140 * 0.80; // matches utterance.rate roughly
-  const msPerWord = 60000 / wordsPerMinute;
+    let cumulativeWords = 0;
+    const segmentTimings = story.segments.map(s => {
+      const wordCount = s.de.split(/\s+/).length;
+      const delay = cumulativeWords * msPerWord;
+      cumulativeWords += wordCount;
+      return delay;
+    });
 
-  let cumulativeWords = 0;
-  const segmentTimings = story.segments.map(s => {
-    const wordCount = s.de.split(/\s+/).length;
-    const delay = cumulativeWords * msPerWord;
-    cumulativeWords += wordCount;
-    return delay;
-  });
-
-  segmentTimings.forEach((delay, idx) => {
-    setTimeout(() => {
-      if (window.speechSynthesis.speaking && !window.speechSynthesis.paused) {
-        setActiveSegment(idx);
-      }
-    }, delay);
-  });
-};
+    segmentTimings.forEach((delay, idx) => {
+      setTimeout(() => {
+        if (window.speechSynthesis.speaking && !window.speechSynthesis.paused) {
+          setActiveSegment(idx);
+        }
+      }, delay);
+    });
+  };
 
   const handlePause = () => {
     window.speechSynthesis.pause();
@@ -480,423 +483,417 @@ const startFallbackTimer = () => {
   };
 
   return (
-    
 
-// This is the return() JSX for your story component — drop it in place of your
-// current return, keeping all your existing state/handlers (story, viewMode,
-// isSpeaking, isPaused, activeSegment, handlePlay, handlePause, handleResume,
-// handleStop, renderTextWithTooltips, sortedVocabulary, quiz state, write state, etc.)
 
-  <div className="min-h-screen bg-[#0a0f1a] text-slate-200 selection:bg-cyan-500/30 font-sans pb-40 relative overflow-hidden">
+    // This is the return() JSX for your story component — drop it in place of your
+    // current return, keeping all your existing state/handlers (story, viewMode,
+    // isSpeaking, isPaused, activeSegment, handlePlay, handlePause, handleResume,
+    // handleStop, renderTextWithTooltips, sortedVocabulary, quiz state, write state, etc.)
 
-    {/* Ambient glow accents — same treatment as the rest of the site */}
-    <div className="absolute top-0 -left-24 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
-    <div className="absolute top-96 -right-24 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
+    <div className="min-h-screen bg-[#0a0f1a] text-slate-200 selection:bg-cyan-500/30 font-sans pb-40 relative overflow-hidden">
 
-    {/* Hero Header */}
-    <div className="relative h-64 w-full overflow-hidden md:h-80">
-      <img src={storyone} alt="Story Cover" className="h-full w-full object-cover" />
-      <div className="absolute inset-0 bg-gradient-to-t from-[#0a0f1a] via-[#0a0f1a]/60 to-transparent" />
+      {/* Ambient glow accents — same treatment as the rest of the site */}
+      <div className="absolute top-0 -left-24 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-96 -right-24 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="absolute bottom-0 left-0 w-full px-6 pb-6 md:px-12">
-        <div className="flex gap-3 mb-3">
-          <span className="rounded-md border border-cyan-500/40 bg-cyan-500/15 backdrop-blur-sm px-2 py-1 text-xs font-semibold text-cyan-400">
-            {story.level}
-          </span>
-          <span className="rounded-md border border-emerald-500/40 bg-emerald-500/15 backdrop-blur-sm px-2 py-1 text-xs font-semibold text-emerald-400">
-            {story.readTime}
-          </span>
+      {/* Hero Header */}
+      <div className="relative h-64 w-full overflow-hidden md:h-80">
+        <img src={storyone} alt="Story Cover" className="h-full w-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0f1a] via-[#0a0f1a]/60 to-transparent" />
+
+        <div className="absolute bottom-0 left-0 w-full px-6 pb-6 md:px-12">
+          <div className="flex gap-3 mb-3">
+            <span className="rounded-md border border-cyan-500/40 bg-cyan-500/15 backdrop-blur-sm px-2 py-1 text-xs font-semibold text-cyan-400">
+              {story.level}
+            </span>
+            <span className="rounded-md border border-emerald-500/40 bg-emerald-500/15 backdrop-blur-sm px-2 py-1 text-xs font-semibold text-emerald-400">
+              {story.readTime}
+            </span>
+          </div>
+          <h1 className="text-3xl font-extrabold text-white md:text-5xl tracking-tight">
+            {story.titleDe}
+          </h1>
+          <h2 className="text-xl font-medium text-slate-400 mt-2" dir="rtl">
+            {story.titleKu}
+          </h2>
         </div>
-        <h1 className="text-3xl font-extrabold text-white md:text-5xl tracking-tight">
-          {story.titleDe}
-        </h1>
-        <h2 className="text-xl font-medium text-slate-400 mt-2" dir="rtl">
-          {story.titleKu}
-        </h2>
       </div>
-    </div>
 
-    <main className="relative mx-auto max-w-4xl">
+      <main className="relative mx-auto max-w-4xl">
 
-      {/* Sticky Control Bar — now a floating glass pill instead of a flat bar */}
-      <div className="sticky top-4 z-40 mx-4 md:mx-8 mb-6">
-        <div className="rounded-2xl border border-slate-800 bg-slate-900/70 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.4)] px-5 py-3 flex flex-wrap items-center justify-between gap-4">
-          <div className="flex items-center gap-2">
-            {!isSpeaking ? (
-              <button
-                onClick={handlePlay}
-                className="flex h-10 px-5 items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-cyan-600 to-emerald-600 hover:from-cyan-500 hover:to-emerald-500 font-semibold text-white shadow-[0_4px_20px_rgba(34,211,238,0.25)] transition-all active:scale-[0.98]"
-              >
-                <Play size={16} fill="white" /> Vorlesen
-              </button>
-            ) : (
-              <>
-                {!isPaused ? (
-                  <button
-                    onClick={handlePause}
-                    className="flex h-10 px-5 items-center justify-center gap-2 rounded-xl border border-cyan-500/40 bg-cyan-500/10 font-medium text-cyan-400 hover:bg-cyan-500/20 transition"
-                  >
-                    <Pause size={16} /> Pause
-                  </button>
-                ) : (
-                  <button
-                    onClick={handleResume}
-                    className="flex h-10 px-5 items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-cyan-600 to-emerald-600 font-semibold text-white shadow-[0_4px_20px_rgba(34,211,238,0.25)] transition"
-                  >
-                    <Play size={16} fill="white" /> Wieder aufnehmen
-                  </button>
-                )}
+        {/* Sticky Control Bar — now a floating glass pill instead of a flat bar */}
+        <div className="sticky top-4 z-40 mx-4 md:mx-8 mb-6">
+          <div className="rounded-2xl border border-slate-800 bg-slate-900/70 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.4)] px-5 py-3 flex flex-wrap items-center justify-between gap-4">
+            <div className="flex items-center gap-2">
+              {!isSpeaking ? (
                 <button
-                  onClick={handleStop}
-                  className="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-800 text-slate-400 hover:bg-rose-500/20 hover:text-rose-400 transition"
+                  onClick={handlePlay}
+                  className="flex h-10 px-5 items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-cyan-600 to-emerald-600 hover:from-cyan-500 hover:to-emerald-500 font-semibold text-white shadow-[0_4px_20px_rgba(34,211,238,0.25)] transition-all active:scale-[0.98]"
                 >
-                  <Square size={16} fill="currentColor" />
+                  <Play size={16} fill="white" /> Vorlesen
                 </button>
-              </>
-            )}
-          </div>
-
-          <div className="flex bg-slate-950/80 p-1 rounded-xl border border-slate-800">
-            {['german', 'bilingual', 'kurdish'].map((mode) => (
-              <button
-                key={mode}
-                onClick={() => setViewMode(mode)}
-                className={`px-4 py-1.5 text-sm font-medium rounded-lg transition-all capitalize ${
-                  viewMode === mode
-                    ? "bg-gradient-to-r from-cyan-600 to-emerald-600 text-white shadow-md"
-                    : "text-slate-400 hover:text-slate-200"
-                }`}
-              >
-                {mode === 'kurdish' ? 'کوردی' : mode === 'german' ? 'Deutsch' : mode}
-              </button>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* Story Text Area */}
-      <section className="px-6 py-6 md:px-12 text-left">
-        <div className="flex flex-col gap-4">
-          {story.segments.map((segment, i) => {
-            const isReadingThis = activeSegment === i;
-
-            return (
-              <div
-                key={i}
-                className={`flex flex-col md:flex-row gap-4 p-5 rounded-2xl transition-all duration-300 border ${
-                  isReadingThis
-                    ? "bg-gradient-to-r from-cyan-500/10 to-emerald-500/5 border-cyan-500/30 shadow-[0_0_25px_rgba(34,211,238,0.12)] scale-[1.01] border-l-4 border-l-cyan-400"
-                    : "bg-slate-900/30 border-slate-800/60 hover:bg-slate-900/50"
-                }`}
-              >
-                {(viewMode === "german" || viewMode === "bilingual") && (
-                  <div className="flex-1 text-left">
-                    <p className={`font-story font-medium text-[20px] leading-[1.9] tracking-[0.01em] ${isReadingThis ? "text-white" : "text-slate-300"}`}>
-                      {renderTextWithTooltips(segment.de)}
-                    </p>
-                  </div>
-                )}
-
-                {(viewMode === "kurdish" || viewMode === "bilingual") && (
-                  <div className={`flex-1 text-right ${viewMode === "bilingual" ? "md:border-r md:border-slate-800 md:pr-4" : ""}`} dir="rtl">
-                    <p className={`text-[19px] leading-[1.9] font-medium ${isReadingThis ? "text-emerald-400" : "text-slate-400"}`}>
-                      {segment.ku}
-                    </p>
-                  </div>
-                )}
-              </div>
-            );
-          })}
-        </div>
-      </section>
-
-      {/* Massive Vocabulary Table */}
-      <section className="px-6 md:px-12">
-        <div className="mb-6 border-t border-slate-800 pt-10">
-          <h2 className="text-lg font-extrabold uppercase tracking-widest bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent">
-            Vokabular / فەرهەنگا پەیڤان
-          </h2>
-          <p className="text-slate-500 text-sm mt-1">Fast jedes Wort aus der Geschichte ist unten aufgeführt.</p>
-        </div>
-
-        <div className="overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/50 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.3)]">
-          <div className="max-h-[500px] overflow-y-auto overflow-x-auto">
-            <table className="w-full text-left text-sm md:text-base">
-              <thead className="sticky top-0 bg-slate-900/95 backdrop-blur-sm border-b border-slate-800 z-10 shadow-sm">
-                <tr>
-                  <th className="px-5 py-3 font-semibold text-cyan-400 md:text-left">Wort (Deutsch)</th>
-                  <th className="px-5 py-3 font-semibold text-emerald-400 md:text-right" dir="rtl">رامان ب کوردی</th>
-                  <th className="px-5 py-3 font-semibold text-slate-300 table-cell">Bedeutung auf Deutsch</th>
-                  <th className="px-5 py-3 font-semibold table-cell text-emerald-400 text-right" dir="rtl">رامان ب کوردی</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-slate-800/50">
-                {sortedVocabulary.map((item, index) => (
-                  <tr key={index} className="transition-colors hover:bg-cyan-500/5">
-                    <td className="px-5 py-3 font-bold text-cyan-200 align-top md:text-left">{item.wordDe}</td>
-                    <td className="md:text-right px-5 py-3 font-bold text-emerald-300 align-top" dir="rtl">{item.wordKu}</td>
-                    <td className="px-5 py-3 text-slate-400 align-top table-cell text-sm">
-                      {item.sentenceDe}
-                    </td>
-                    <td className="px-5 py-3 text-slate-400 align-top table-cell text-sm">
-                      {item.sentenceKu}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
-      {/* Step-by-Step Interactive Quiz Section */}
-      <section className="px-6 md:px-12 mt-10">
-        <div className="mb-6 border-t border-slate-800 pt-10">
-          <h2 className="text-lg font-extrabold uppercase tracking-widest bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent">
-            Schnelles Quiz / پرسیار و بەرسڤ
-          </h2>
-          <p className="text-slate-500 text-sm mt-1">Bîra xwe biceribînin! Bersivek hilbijêrin ku pêşde biçin.</p>
-        </div>
-
-        <div className="rounded-2xl border border-slate-800 bg-slate-900/50 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.3)] p-6 min-h-[300px] flex flex-col justify-center">
-
-          {!showQuizResults ? (
-            <div className="animate-fade-in-up">
-              <div className="flex justify-between items-center gap-5 mb-6">
-                <span className="text-xs font-bold text-slate-500 uppercase tracking-widest">
-                  Question {currentQuestionIndex + 1} of {story.quiz.length}
-                </span>
-                <div className="flex flex-wrap gap-y-3 gap-x-1">
-                  {story.quiz.map((_, idx) => (
-                    <div
-                      key={idx}
-                      className={`h-1.5 w-6 rounded-full ${
-                        idx === currentQuestionIndex
-                          ? "bg-gradient-to-r from-cyan-400 to-emerald-400"
-                          : idx < currentQuestionIndex
-                          ? "bg-slate-600"
-                          : "bg-slate-800"
-                      }`}
-                    />
-                  ))}
-                </div>
-              </div>
-
-              <div className="mb-6">
-                <h3 className="text-xl font-semibold text-slate-200">{story.quiz[currentQuestionIndex].questionDe}</h3>
-                <h3 className="text-lg text-slate-400 mt-2" dir="rtl">{story.quiz[currentQuestionIndex].questionKu}</h3>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                {story.quiz[currentQuestionIndex].options.map((option, oIndex) => {
-                  const isSelected = selectedJustNow === oIndex;
-                  const isCorrectAnswer = oIndex === story.quiz[currentQuestionIndex].correctAnswer;
-
-                  let styleClasses =
-                    "border-slate-700 bg-slate-800/60 hover:bg-slate-800 hover:border-slate-500 text-slate-300";
-
-                  if (selectedJustNow !== null) {
-                    if (isSelected && isCorrectAnswer) {
-                      styleClasses =
-                        "border-2 border-emerald-400 bg-emerald-400/10 text-emerald-300 font-bold shadow-[0_0_20px_rgba(52,211,153,0.35)] scale-[0.98]";
-                    } else if (isSelected && !isCorrectAnswer) {
-                      styleClasses =
-                        "border-2 border-rose-500 bg-rose-500/10 text-rose-300 font-bold shadow-[0_0_20px_rgba(244,63,94,0.35)] scale-[0.98]";
-                    } else {
-                      styleClasses = "border-slate-800 bg-slate-800/20 text-slate-600 opacity-50";
-                    }
-                  }
-
-                  return (
+              ) : (
+                <>
+                  {!isPaused ? (
                     <button
-                      key={oIndex}
-                      onClick={() => handleOptionSelect(oIndex)}
-                      disabled={selectedJustNow !== null}
-                      className={`p-4 border rounded-xl text-left transition-all duration-200 flex items-center justify-between gap-2 ${styleClasses}`}
+                      onClick={handlePause}
+                      className="flex h-10 px-5 items-center justify-center gap-2 rounded-xl border border-cyan-500/40 bg-cyan-500/10 font-medium text-cyan-400 hover:bg-cyan-500/20 transition"
                     >
-                      <span>{option}</span>
-                      {selectedJustNow !== null && isSelected && isCorrectAnswer && <CheckCircle2 size={18} />}
-                      {selectedJustNow !== null && isSelected && !isCorrectAnswer && <XCircle size={18} />}
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
-          ) : (
-            <div className="text-center animate-fade-in-up py-8">
-              <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-br from-cyan-500/20 to-emerald-500/20 border border-slate-700 mb-6">
-                <span className="text-3xl font-bold text-white">{quizScore}/{story.quiz.length}</span>
-              </div>
-              <h3 className="text-2xl font-bold text-emerald-400 mb-2 flex items-center justify-center gap-2">
-                <Sparkles size={22} /> Quiz abgeschlossen!
-              </h3>
-              <p className="text-slate-400 mb-8">
-                {quizScore === story.quiz.length ? "Perfect score! Great job." : "Good effort! Keep practicing."}
-              </p>
-              <button
-                onClick={resetQuiz}
-                className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-600 to-emerald-600 hover:from-cyan-500 hover:to-emerald-500 text-white font-bold py-3 px-8 rounded-xl shadow-[0_4px_20px_rgba(34,211,238,0.25)] transition-all active:scale-[0.98]"
-              >
-                <RotateCcw size={16} /> Wiederholen Sie das Quiz
-              </button>
-            </div>
-          )}
-        </div>
-      </section>
-
-      {/* Writing Practice Section */}
-      <section className="px-6 md:px-12 mt-10">
-        <div className="mb-6 border-t border-slate-800 pt-10">
-          <h2 className="text-lg font-extrabold uppercase tracking-widest bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent">
-            Schreibpraxis / تاقیکرنا نڤیسینێ
-          </h2>
-          <p className="text-slate-500 text-sm mt-1">
-            Geben Sie die richtige deutsche Übersetzung ein.{" "}
-            <strong className="text-slate-300">Wenn es sich um ein Substantiv handelt, müssen Sie den Artikel angeben (der, die, das)!</strong>
-          </p>
-        </div>
-
-        <div className="rounded-2xl border border-slate-800 bg-slate-900/50 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.3)] p-6 min-h-[300px] flex flex-col justify-center">
-          {!showWriteResults ? (
-            <div>
-              <div className="flex justify-between items-center gap-5 mb-6">
-                <span className="text-xs font-bold text-slate-500 uppercase tracking-widest">
-                  Exercise {writeIndex + 1} of {writingQuestions.length}
-                </span>
-                <div className="flex gap-x-1 flex-wrap max-w-[60%] justify-end">
-                  {writingQuestions.map((_, idx) => (
-                    <div
-                      key={idx}
-                      className={`h-1.5 w-6 rounded-full mb-1 ${
-                        idx === writeIndex
-                          ? "bg-gradient-to-r from-cyan-400 to-emerald-400"
-                          : idx < writeIndex
-                          ? "bg-slate-600"
-                          : "bg-slate-800"
-                      }`}
-                    />
-                  ))}
-                </div>
-              </div>
-
-              <div className="mb-6 text-center md:text-left">
-                <span className="text-xs uppercase bg-slate-950/80 border border-slate-800 text-cyan-400 px-2 py-1 rounded-md font-mono">
-                  Übersetzen Sie dieses Wort:
-                </span>
-                <h3 className="text-3xl font-bold text-emerald-400 mt-2" dir="rtl">{writingQuestions[writeIndex].ku}</h3>
-                <p className="text-sm text-slate-400 italic mt-2">Hinweis: "{writingQuestions[writeIndex].hint}"</p>
-              </div>
-
-              <form onSubmit={handleCheckWriteSubmit} className="space-y-4">
-                <div>
-                  <input
-                    type="text"
-                    value={writeInput}
-                    onChange={(e) => !writeChecked && setWriteInput(e.target.value)}
-                    disabled={writeChecked}
-                    placeholder="e.g. das Wasser, schön, der Tag..."
-                    className={`w-full bg-slate-950/80 border text-lg rounded-xl px-4 py-3 text-white placeholder:text-slate-600 focus:outline-none focus:ring-2 transition-all ${
-                      writeChecked
-                        ? writeFeedback === "correct"
-                          ? "border-emerald-500 focus:ring-emerald-500 bg-emerald-950/20"
-                          : "border-rose-500 focus:ring-rose-500 bg-rose-950/20"
-                        : "border-slate-700 focus:border-cyan-500 focus:ring-cyan-500/30"
-                    }`}
-                  />
-                </div>
-
-                {writeChecked && (
-                  <div
-                    className={`p-4 rounded-xl border text-sm flex items-start gap-2 ${
-                      writeFeedback === "correct"
-                        ? "bg-emerald-500/10 border-emerald-500/30 text-emerald-400"
-                        : writeFeedback === "missing_article"
-                        ? "bg-amber-500/10 border-amber-500/30 text-amber-400"
-                        : "bg-rose-500/10 border-rose-500/30 text-rose-400"
-                    }`}
-                  >
-                    {writeFeedback === "correct" && (
-                      <>
-                        <Sparkles size={18} className="shrink-0 mt-0.5" />
-                        <span><strong>Richtig!</strong> Ausgezeichnete Rechtschreibung.</span>
-                      </>
-                    )}
-                    {writeFeedback === "missing_article" && (
-                      <>
-                        <AlertTriangle size={18} className="shrink-0 mt-0.5" />
-                        <span>
-                          <strong>Fast richtig!</strong> Du hast den Artikel vergessen. Die vollständige richtige Antwort lautet
-                          <strong className="underline text-white">{writingQuestions[writeIndex].de}</strong>.
-                        </span>
-                      </>
-                    )}
-                    {writeFeedback === "wrong_article" && (
-                      <>
-                        <XCircle size={18} className="shrink-0 mt-0.5" />
-                        <span>
-                          <strong>Falscher Artikel!</strong> Das Substantiv ist richtig, aber der Artikel ist falsch. Die richtige Antwort ist
-                          <strong className="underline text-white">{writingQuestions[writeIndex].de}</strong>.
-                        </span>
-                      </>
-                    )}
-                    {writeFeedback === "incorrect" && (
-                      <>
-                        <XCircle size={18} className="shrink-0 mt-0.5" />
-                        <span>
-                          <strong>Falsch.</strong> Das richtige Wort ist{" "}
-                          <strong className="underline text-white">{writingQuestions[writeIndex].de}</strong>.
-                        </span>
-                      </>
-                    )}
-                  </div>
-                )}
-
-                <div className="flex justify-end">
-                  {!writeChecked ? (
-                    <button
-                      type="submit"
-                      disabled={!writeInput.trim()}
-                      className="bg-gradient-to-r from-emerald-600 to-cyan-600 hover:from-emerald-500 hover:to-cyan-500 disabled:opacity-50 disabled:cursor-not-allowed text-white font-bold py-2.5 px-6 rounded-xl transition-all shadow-[0_4px_20px_rgba(52,211,153,0.25)] active:scale-[0.98]"
-                    >
-                      Antwort prüfen
+                      <Pause size={16} /> Pause
                     </button>
                   ) : (
                     <button
-                      type="button"
-                      onClick={handleNextWriteQuestion}
-                      className="bg-gradient-to-r from-cyan-600 to-emerald-600 hover:from-cyan-500 hover:to-emerald-500 text-white font-bold py-2.5 px-6 rounded-xl transition-all shadow-[0_4px_20px_rgba(34,211,238,0.25)] active:scale-[0.98]"
+                      onClick={handleResume}
+                      className="flex h-10 px-5 items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-cyan-600 to-emerald-600 font-semibold text-white shadow-[0_4px_20px_rgba(34,211,238,0.25)] transition"
                     >
-                      {writeIndex < writingQuestions.length - 1 ? "Next Exercise →" : "Finish & View Results"}
+                      <Play size={16} fill="white" /> Wieder aufnehmen
                     </button>
                   )}
-                </div>
-              </form>
+                  <button
+                    onClick={handleStop}
+                    className="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-800 text-slate-400 hover:bg-rose-500/20 hover:text-rose-400 transition"
+                  >
+                    <Square size={16} fill="currentColor" />
+                  </button>
+                </>
+              )}
             </div>
-          ) : (
-            <div className="text-center py-8">
-              <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-br from-cyan-500/20 to-emerald-500/20 border border-slate-700 mb-6">
-                <span className="text-3xl font-bold text-white">{writeScore}/{writingQuestions.length}</span>
-              </div>
-              <h3 className="text-2xl font-bold text-emerald-400 mb-2 flex items-center justify-center gap-2">
-                <Sparkles size={22} /> Schreiben abgeschlossen!
-              </h3>
-              <p className="text-slate-400 mb-8">
-                {writeScore === writingQuestions.length
-                  ? "Incredible! You nailed the spelling and the articles."
-                  : "Spelling and articles can be tricky. Try again to get 100%!"}
-              </p>
-              <button
-                onClick={resetWriteQuiz}
-                className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-600 to-cyan-600 hover:from-emerald-500 hover:to-cyan-500 text-white font-bold py-3 px-8 rounded-xl shadow-[0_4px_20px_rgba(52,211,153,0.25)] transition-all active:scale-[0.98]"
-              >
-                <RotateCcw size={16} /> Wiederholen Sie das Schreibquiz
-              </button>
+
+            <div className="flex bg-slate-950/80 p-1 rounded-xl border border-slate-800">
+              {['german', 'bilingual', 'kurdish'].map((mode) => (
+                <button
+                  key={mode}
+                  onClick={() => setViewMode(mode)}
+                  className={`px-4 py-1.5 text-sm font-medium rounded-lg transition-all capitalize ${viewMode === mode
+                      ? "bg-gradient-to-r from-cyan-600 to-emerald-600 text-white shadow-md"
+                      : "text-slate-400 hover:text-slate-200"
+                    }`}
+                >
+                  {mode === 'kurdish' ? 'کوردی' : mode === 'german' ? 'Deutsch' : mode}
+                </button>
+              ))}
             </div>
-          )}
+          </div>
         </div>
-      </section>
-    </main>
-  </div>
-);
+
+        {/* Story Text Area */}
+        <section className="px-6 py-6 md:px-12 text-left">
+          <div className="flex flex-col gap-4">
+            {story.segments.map((segment, i) => {
+              const isReadingThis = activeSegment === i;
+
+              return (
+                <div
+                  key={i}
+                  className={`flex flex-col md:flex-row gap-4 p-5 rounded-2xl transition-all duration-300 border ${isReadingThis
+                      ? "bg-gradient-to-r from-cyan-500/10 to-emerald-500/5 border-cyan-500/30 shadow-[0_0_25px_rgba(34,211,238,0.12)] scale-[1.01] border-l-4 border-l-cyan-400"
+                      : "bg-slate-900/30 border-slate-800/60 hover:bg-slate-900/50"
+                    }`}
+                >
+                  {(viewMode === "german" || viewMode === "bilingual") && (
+                    <div className="flex-1 text-left">
+                      <p className={`font-story font-medium text-[20px] leading-[1.9] tracking-[0.01em] ${isReadingThis ? "text-white" : "text-slate-300"}`}>
+                        {renderTextWithTooltips(segment.de)}
+                      </p>
+                    </div>
+                  )}
+
+                  {(viewMode === "kurdish" || viewMode === "bilingual") && (
+                    <div className={`flex-1 text-right ${viewMode === "bilingual" ? "md:border-r md:border-slate-800 md:pr-4" : ""}`} dir="rtl">
+                      <p className={`text-[19px] leading-[1.9] font-medium ${isReadingThis ? "text-emerald-400" : "text-slate-400"}`}>
+                        {segment.ku}
+                      </p>
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </section>
+
+        {/* Massive Vocabulary Table */}
+        <section className="px-6 md:px-12">
+          <div className="mb-6 border-t border-slate-800 pt-10">
+            <h2 className="text-lg font-extrabold uppercase tracking-widest bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent">
+              Vokabular / فەرهەنگا پەیڤان
+            </h2>
+            <p className="text-slate-500 text-sm mt-1">Fast jedes Wort aus der Geschichte ist unten aufgeführt.</p>
+          </div>
+
+          <div className="overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/50 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.3)]">
+            <div className="max-h-[500px] overflow-y-auto overflow-x-auto">
+              <table className="w-full text-left text-sm md:text-base">
+                <thead className="sticky top-0 bg-slate-900/95 backdrop-blur-sm border-b border-slate-800 z-10 shadow-sm">
+                  <tr>
+                    <th className="px-5 py-3 font-semibold text-cyan-400 md:text-left">Wort (Deutsch)</th>
+                    <th className="px-5 py-3 font-semibold text-emerald-400 md:text-right" dir="rtl">رامان ب کوردی</th>
+                    <th className="px-5 py-3 font-semibold text-slate-300 table-cell">Bedeutung auf Deutsch</th>
+                    <th className="px-5 py-3 font-semibold table-cell text-emerald-400 text-right" dir="rtl">رامان ب کوردی</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-800/50">
+                  {sortedVocabulary.map((item, index) => (
+                    <tr key={index} className="transition-colors hover:bg-cyan-500/5">
+                      <td className="px-5 py-3 font-bold text-cyan-200 align-top md:text-left">{item.wordDe}</td>
+                      <td className="md:text-right px-5 py-3 font-bold text-emerald-300 align-top" dir="rtl">{item.wordKu}</td>
+                      <td className="px-5 py-3 text-slate-400 align-top table-cell text-sm">
+                        {item.sentenceDe}
+                      </td>
+                      <td className="px-5 py-3 text-slate-400 align-top table-cell text-sm">
+                        {item.sentenceKu}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        {/* Step-by-Step Interactive Quiz Section */}
+        <section className="px-6 md:px-12 mt-10">
+          <div className="mb-6 border-t border-slate-800 pt-10">
+            <h2 className="text-lg font-extrabold uppercase tracking-widest bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent">
+              Schnelles Quiz / پرسیار و بەرسڤ
+            </h2>
+            <p className="text-slate-500 text-sm mt-1">Bîra xwe biceribînin! Bersivek hilbijêrin ku pêşde biçin.</p>
+          </div>
+
+          <div className="rounded-2xl border border-slate-800 bg-slate-900/50 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.3)] p-6 min-h-[300px] flex flex-col justify-center">
+
+            {!showQuizResults ? (
+              <div className="animate-fade-in-up">
+                <div className="flex justify-between items-center gap-5 mb-6">
+                  <span className="text-xs font-bold text-slate-500 uppercase tracking-widest">
+                    Question {currentQuestionIndex + 1} of {story.quiz.length}
+                  </span>
+                  <div className="flex flex-wrap gap-y-3 gap-x-1">
+                    {story.quiz.map((_, idx) => (
+                      <div
+                        key={idx}
+                        className={`h-1.5 w-6 rounded-full ${idx === currentQuestionIndex
+                            ? "bg-gradient-to-r from-cyan-400 to-emerald-400"
+                            : idx < currentQuestionIndex
+                              ? "bg-slate-600"
+                              : "bg-slate-800"
+                          }`}
+                      />
+                    ))}
+                  </div>
+                </div>
+
+                <div className="mb-6">
+                  <h3 className="text-xl font-semibold text-slate-200">{story.quiz[currentQuestionIndex].questionDe}</h3>
+                  <h3 className="text-lg text-slate-400 mt-2" dir="rtl">{story.quiz[currentQuestionIndex].questionKu}</h3>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  {story.quiz[currentQuestionIndex].options.map((option, oIndex) => {
+                    const isSelected = selectedJustNow === oIndex;
+                    const isCorrectAnswer = oIndex === story.quiz[currentQuestionIndex].correctAnswer;
+
+                    let styleClasses =
+                      "border-slate-700 bg-slate-800/60 hover:bg-slate-800 hover:border-slate-500 text-slate-300";
+
+                    if (selectedJustNow !== null) {
+                      if (isSelected && isCorrectAnswer) {
+                        styleClasses =
+                          "border-2 border-emerald-400 bg-emerald-400/10 text-emerald-300 font-bold shadow-[0_0_20px_rgba(52,211,153,0.35)] scale-[0.98]";
+                      } else if (isSelected && !isCorrectAnswer) {
+                        styleClasses =
+                          "border-2 border-rose-500 bg-rose-500/10 text-rose-300 font-bold shadow-[0_0_20px_rgba(244,63,94,0.35)] scale-[0.98]";
+                      } else {
+                        styleClasses = "border-slate-800 bg-slate-800/20 text-slate-600 opacity-50";
+                      }
+                    }
+
+                    return (
+                      <button
+                        key={oIndex}
+                        onClick={() => handleOptionSelect(oIndex)}
+                        disabled={selectedJustNow !== null}
+                        className={`p-4 border rounded-xl text-left transition-all duration-200 flex items-center justify-between gap-2 ${styleClasses}`}
+                      >
+                        <span>{option}</span>
+                        {selectedJustNow !== null && isSelected && isCorrectAnswer && <CheckCircle2 size={18} />}
+                        {selectedJustNow !== null && isSelected && !isCorrectAnswer && <XCircle size={18} />}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+            ) : (
+              <div className="text-center animate-fade-in-up py-8">
+                <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-br from-cyan-500/20 to-emerald-500/20 border border-slate-700 mb-6">
+                  <span className="text-3xl font-bold text-white">{quizScore}/{story.quiz.length}</span>
+                </div>
+                <h3 className="text-2xl font-bold text-emerald-400 mb-2 flex items-center justify-center gap-2">
+                  <Sparkles size={22} /> Quiz abgeschlossen!
+                </h3>
+                <p className="text-slate-400 mb-8">
+                  {quizScore === story.quiz.length ? "Perfect score! Great job." : "Good effort! Keep practicing."}
+                </p>
+                <button
+                  onClick={resetQuiz}
+                  className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-600 to-emerald-600 hover:from-cyan-500 hover:to-emerald-500 text-white font-bold py-3 px-8 rounded-xl shadow-[0_4px_20px_rgba(34,211,238,0.25)] transition-all active:scale-[0.98]"
+                >
+                  <RotateCcw size={16} /> Wiederholen Sie das Quiz
+                </button>
+              </div>
+            )}
+          </div>
+        </section>
+
+        {/* Writing Practice Section */}
+        <section className="px-6 md:px-12 mt-10">
+          <div className="mb-6 border-t border-slate-800 pt-10">
+            <h2 className="text-lg font-extrabold uppercase tracking-widest bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent">
+              Schreibpraxis / تاقیکرنا نڤیسینێ
+            </h2>
+            <p className="text-slate-500 text-sm mt-1">
+              Geben Sie die richtige deutsche Übersetzung ein.{" "}
+              <strong className="text-slate-300">Wenn es sich um ein Substantiv handelt, müssen Sie den Artikel angeben (der, die, das)!</strong>
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-slate-800 bg-slate-900/50 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.3)] p-6 min-h-[300px] flex flex-col justify-center">
+            {!showWriteResults ? (
+              <div>
+                <div className="flex justify-between items-center gap-5 mb-6">
+                  <span className="text-xs font-bold text-slate-500 uppercase tracking-widest">
+                    Exercise {writeIndex + 1} of {writingQuestions.length}
+                  </span>
+                  <div className="flex gap-x-1 flex-wrap max-w-[60%] justify-end">
+                    {writingQuestions.map((_, idx) => (
+                      <div
+                        key={idx}
+                        className={`h-1.5 w-6 rounded-full mb-1 ${idx === writeIndex
+                            ? "bg-gradient-to-r from-cyan-400 to-emerald-400"
+                            : idx < writeIndex
+                              ? "bg-slate-600"
+                              : "bg-slate-800"
+                          }`}
+                      />
+                    ))}
+                  </div>
+                </div>
+
+                <div className="mb-6 text-center md:text-left">
+                  <span className="text-xs uppercase bg-slate-950/80 border border-slate-800 text-cyan-400 px-2 py-1 rounded-md font-mono">
+                    Übersetzen Sie dieses Wort:
+                  </span>
+                  <h3 className="text-3xl font-bold text-emerald-400 mt-2" dir="rtl">{writingQuestions[writeIndex].ku}</h3>
+                  <p className="text-sm text-slate-400 italic mt-2">Hinweis: "{writingQuestions[writeIndex].hint}"</p>
+                </div>
+
+                <form onSubmit={handleCheckWriteSubmit} className="space-y-4">
+                  <div>
+                    <input
+                      type="text"
+                      value={writeInput}
+                      onChange={(e) => !writeChecked && setWriteInput(e.target.value)}
+                      disabled={writeChecked}
+                      placeholder="e.g. das Wasser, schön, der Tag..."
+                      className={`w-full bg-slate-950/80 border text-lg rounded-xl px-4 py-3 text-white placeholder:text-slate-600 focus:outline-none focus:ring-2 transition-all ${writeChecked
+                          ? writeFeedback === "correct"
+                            ? "border-emerald-500 focus:ring-emerald-500 bg-emerald-950/20"
+                            : "border-rose-500 focus:ring-rose-500 bg-rose-950/20"
+                          : "border-slate-700 focus:border-cyan-500 focus:ring-cyan-500/30"
+                        }`}
+                    />
+                  </div>
+
+                  {writeChecked && (
+                    <div
+                      className={`p-4 rounded-xl border text-sm flex items-start gap-2 ${writeFeedback === "correct"
+                          ? "bg-emerald-500/10 border-emerald-500/30 text-emerald-400"
+                          : writeFeedback === "missing_article"
+                            ? "bg-amber-500/10 border-amber-500/30 text-amber-400"
+                            : "bg-rose-500/10 border-rose-500/30 text-rose-400"
+                        }`}
+                    >
+                      {writeFeedback === "correct" && (
+                        <>
+                          <Sparkles size={18} className="shrink-0 mt-0.5" />
+                          <span><strong>Richtig!</strong> Ausgezeichnete Rechtschreibung.</span>
+                        </>
+                      )}
+                      {writeFeedback === "missing_article" && (
+                        <>
+                          <AlertTriangle size={18} className="shrink-0 mt-0.5" />
+                          <span>
+                            <strong>Fast richtig!</strong> Du hast den Artikel vergessen. Die vollständige richtige Antwort lautet
+                            <strong className="underline text-white">{writingQuestions[writeIndex].de}</strong>.
+                          </span>
+                        </>
+                      )}
+                      {writeFeedback === "wrong_article" && (
+                        <>
+                          <XCircle size={18} className="shrink-0 mt-0.5" />
+                          <span>
+                            <strong>Falscher Artikel!</strong> Das Substantiv ist richtig, aber der Artikel ist falsch. Die richtige Antwort ist
+                            <strong className="underline text-white">{writingQuestions[writeIndex].de}</strong>.
+                          </span>
+                        </>
+                      )}
+                      {writeFeedback === "incorrect" && (
+                        <>
+                          <XCircle size={18} className="shrink-0 mt-0.5" />
+                          <span>
+                            <strong>Falsch.</strong> Das richtige Wort ist{" "}
+                            <strong className="underline text-white">{writingQuestions[writeIndex].de}</strong>.
+                          </span>
+                        </>
+                      )}
+                    </div>
+                  )}
+
+                  <div className="flex justify-end">
+                    {!writeChecked ? (
+                      <button
+                        type="submit"
+                        disabled={!writeInput.trim()}
+                        className="bg-gradient-to-r from-emerald-600 to-cyan-600 hover:from-emerald-500 hover:to-cyan-500 disabled:opacity-50 disabled:cursor-not-allowed text-white font-bold py-2.5 px-6 rounded-xl transition-all shadow-[0_4px_20px_rgba(52,211,153,0.25)] active:scale-[0.98]"
+                      >
+                        Antwort prüfen
+                      </button>
+                    ) : (
+                      <button
+                        type="button"
+                        onClick={handleNextWriteQuestion}
+                        className="bg-gradient-to-r from-cyan-600 to-emerald-600 hover:from-cyan-500 hover:to-emerald-500 text-white font-bold py-2.5 px-6 rounded-xl transition-all shadow-[0_4px_20px_rgba(34,211,238,0.25)] active:scale-[0.98]"
+                      >
+                        {writeIndex < writingQuestions.length - 1 ? "Next Exercise →" : "Finish & View Results"}
+                      </button>
+                    )}
+                  </div>
+                </form>
+              </div>
+            ) : (
+              <div className="text-center py-8">
+                <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-br from-cyan-500/20 to-emerald-500/20 border border-slate-700 mb-6">
+                  <span className="text-3xl font-bold text-white">{writeScore}/{writingQuestions.length}</span>
+                </div>
+                <h3 className="text-2xl font-bold text-emerald-400 mb-2 flex items-center justify-center gap-2">
+                  <Sparkles size={22} /> Schreiben abgeschlossen!
+                </h3>
+                <p className="text-slate-400 mb-8">
+                  {writeScore === writingQuestions.length
+                    ? "Incredible! You nailed the spelling and the articles."
+                    : "Spelling and articles can be tricky. Try again to get 100%!"}
+                </p>
+                <button
+                  onClick={resetWriteQuiz}
+                  className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-600 to-cyan-600 hover:from-emerald-500 hover:to-cyan-500 text-white font-bold py-3 px-8 rounded-xl shadow-[0_4px_20px_rgba(52,211,153,0.25)] transition-all active:scale-[0.98]"
+                >
+                  <RotateCcw size={16} /> Wiederholen Sie das Schreibquiz
+                </button>
+              </div>
+            )}
+          </div>
+        </section>
+      </main>
+    </div>
+  );
 
 }
