@@ -5,7 +5,7 @@ import BottomNavbar from "./components/Navbar";
 // import Login from "./pages/Login";
 // import Register from "./pages/Register";
 // import ForgotPassword from "./pages/ForgotPassword";
-import StoryPage from "./pages/german/Test";
+import StoryPage from "./pages/german/Story";
 import Translator from "./pages/german/translation";
 
 

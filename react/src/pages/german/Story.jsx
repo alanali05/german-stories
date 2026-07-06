@@ -276,44 +276,50 @@ export default function StoryPage() {
   }, []);
 
   const handlePlay = () => {
-    window.speechSynthesis.cancel();
-    
-    // FIX 1: Instantiate directly onto the ref to completely protect it 
-    // from browser Garbage Collection
-    utteranceRef.current = new SpeechSynthesisUtterance(fullTextDe);
-    const utterance = utteranceRef.current;
+  window.speechSynthesis.cancel();
+  
+  utteranceRef.current = new SpeechSynthesisUtterance(fullTextDe);
+  const utterance = utteranceRef.current;
 
-    utterance.lang = 'de-DE'; // Set language to German
-    utterance.rate = 0.80;
-    utterance.pitch = 1.0;
-    utterance.volume = 1;
+  utterance.lang = 'de-DE';
+  utterance.rate = 0.80;
+  utterance.pitch = 1.0;
+  utterance.volume = 1;
 
+  const pickVoice = () => {
     const voices = window.speechSynthesis.getVoices();
-    let bestVoice = voices.find(v =>
-      v.lang.startsWith("de") &&
-      (v.name.toLowerCase().includes("male") || v.name.includes("Hans") || v.name.includes("Conrad"))
-    );
+    let v = voices.find(v => v.lang.startsWith("de") &&
+      (v.name.toLowerCase().includes("male") || v.name.includes("Hans") || v.name.includes("Conrad")));
+    if (!v) v = voices.find(v => v.lang.startsWith("de") && v.name.includes("Google"));
+    if (!v) v = voices.find(v => v.lang.startsWith("de"));
+    return v;
+  };
 
-    if (!bestVoice) bestVoice = voices.find(v => v.lang.startsWith("de") && v.name.includes("Google"));
-    if (!bestVoice) bestVoice = voices.find(v => v.lang.startsWith("de"));
-
+  const startUtterance = () => {
+    const bestVoice = pickVoice();
     if (bestVoice) utterance.voice = bestVoice;
 
-    utterance.onboundary = (event) => {
-      // Debug Log: Check your console to see if boundaries fire and what they report
-      console.log(`Boundary hit! Name: "${event.name}", charIndex: ${event.charIndex}`);
+    let boundaryFired = false;
 
-      // FIX 2: Loosen the check. If event.name is missing or reports as 'word', track it.
+    utterance.onboundary = (event) => {
       if (!event.name || event.name === "word") {
+        boundaryFired = true;
         const charIndex = event.charIndex;
         const activeIdx = segmentRanges.findIndex(
           (r) => charIndex >= r.start && charIndex <= r.end
         );
-        
-        if (activeIdx !== -1) {
-          setActiveSegment(activeIdx);
-        }
+        if (activeIdx !== -1) setActiveSegment(activeIdx);
       }
+    };
+
+    utterance.onstart = () => {
+      // Fallback: if onboundary hasn't fired within 400ms of speech starting,
+      // assume this browser doesn't support it, and drive highlighting off a timer instead.
+      setTimeout(() => {
+        if (!boundaryFired) {
+          startFallbackTimer();
+        }
+      }, 400);
     };
 
     utterance.onend = () => resetSpeechState();
@@ -322,11 +328,41 @@ export default function StoryPage() {
       resetSpeechState();
     };
 
-    // Start speaking
     window.speechSynthesis.speak(utterance);
     setIsSpeaking(true);
     setIsPaused(false);
   };
+
+  // Voices sometimes aren't loaded yet on first call in Chrome
+  if (window.speechSynthesis.getVoices().length === 0) {
+    window.speechSynthesis.onvoiceschanged = () => startUtterance();
+  } else {
+    startUtterance();
+  }
+};
+
+// Fallback: estimate segment timing by word count, since some browsers
+// (Safari, Firefox) don't reliably fire onboundary at all.
+const startFallbackTimer = () => {
+  const wordsPerMinute = 140 * 0.80; // matches utterance.rate roughly
+  const msPerWord = 60000 / wordsPerMinute;
+
+  let cumulativeWords = 0;
+  const segmentTimings = story.segments.map(s => {
+    const wordCount = s.de.split(/\s+/).length;
+    const delay = cumulativeWords * msPerWord;
+    cumulativeWords += wordCount;
+    return delay;
+  });
+
+  segmentTimings.forEach((delay, idx) => {
+    setTimeout(() => {
+      if (window.speechSynthesis.speaking && !window.speechSynthesis.paused) {
+        setActiveSegment(idx);
+      }
+    }, delay);
+  });
+};
 
   const handlePause = () => {
     window.speechSynthesis.pause();
