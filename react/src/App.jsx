@@ -2,9 +2,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/german/Home";
 import BottomNavbar from "./components/Navbar";
-import Login from "./pages/Login";
-import Register from "./pages/Register";
-import ForgotPassword from "./pages/ForgotPassword";
+// import Login from "./pages/Login";
+// import Register from "./pages/Register";
+// import ForgotPassword from "./pages/ForgotPassword";
 import StoryPage from "./pages/german/Test";
 import Translator from "./pages/german/translation";
 
