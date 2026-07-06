@@ -1,10 +1,9 @@
 import { NavLink } from "react-router-dom";
-import { BookOpen, Languages, Mail } from "lucide-react";
+import { BookOpen, Languages } from "lucide-react";
 // UserCircle icon
 const navItems = [
   { to: "/", label: "Geschichten", icon: BookOpen },
   { to: "/translator", label: "Übersetzer", icon: Languages },
-  { to: "/contact", label: "Kontakt", icon: Mail },
 ];
 
 export default function BottomNavbar() {
