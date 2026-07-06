@@ -277,7 +277,11 @@ export default function StoryPage() {
 
   const handlePlay = () => {
     window.speechSynthesis.cancel();
-    const utterance = new SpeechSynthesisUtterance(fullTextDe);
+    
+    // FIX 1: Instantiate directly onto the ref to completely protect it 
+    // from browser Garbage Collection
+    utteranceRef.current = new SpeechSynthesisUtterance(fullTextDe);
+    const utterance = utteranceRef.current;
 
     utterance.lang = 'de-DE'; // Set language to German
     utterance.rate = 0.80;
@@ -296,19 +300,29 @@ export default function StoryPage() {
     if (bestVoice) utterance.voice = bestVoice;
 
     utterance.onboundary = (event) => {
-      if (event.name === "word") {
+      // Debug Log: Check your console to see if boundaries fire and what they report
+      console.log(`Boundary hit! Name: "${event.name}", charIndex: ${event.charIndex}`);
+
+      // FIX 2: Loosen the check. If event.name is missing or reports as 'word', track it.
+      if (!event.name || event.name === "word") {
         const charIndex = event.charIndex;
         const activeIdx = segmentRanges.findIndex(
           (r) => charIndex >= r.start && charIndex <= r.end
         );
-        if (activeIdx !== -1) setActiveSegment(activeIdx);
+        
+        if (activeIdx !== -1) {
+          setActiveSegment(activeIdx);
+        }
       }
     };
 
     utterance.onend = () => resetSpeechState();
-    utterance.onerror = () => resetSpeechState();
+    utterance.onerror = (err) => {
+      console.error("SpeechSynthesis Error:", err);
+      resetSpeechState();
+    };
 
-    utteranceRef.current = utterance;
+    // Start speaking
     window.speechSynthesis.speak(utterance);
     setIsSpeaking(true);
     setIsPaused(false);
